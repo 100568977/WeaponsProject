@@ -21,20 +21,29 @@ namespace WeaponsProject
             Enemy dingo = new Enemy();
             dingo.proximity = 12;
 
+            Enemy archer = new Enemy();
+            archer.proximity = 600;
+
 
             Melee melee1 = new Melee();
             melee1.BaseDamage = 100;
             melee1.BaseRange = 10;
             melee1.CriticalDamage = melee1.BaseDamage * 2;
 
-            for (int i = 0; i < 10; i++)
-            {
-            melee1.attack(grunt.proximity);
+            Ranged ranged1 = new Ranged();
+            ranged1.BaseDamage = 30;
+            ranged1.BaseRange = 500;
+            ranged1.CloseRange = 200;
+            ranged1.CriticalDamage = ranged1.BaseDamage * 2;
+
+            /*melee1.attack(grunt.proximity);
             melee1.attack(mole.proximity);
-            melee1.attack(dingo.proximity);
+            melee1.attack(dingo.proximity); */
+
+            for (int i = 0; i < 30; i++)
+            {
+                ranged1.attack(archer.proximity);
             }
-
-
             Console.ReadKey();
         }
     }

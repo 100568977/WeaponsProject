@@ -8,6 +8,6 @@ namespace WeaponsProject
 {
      public class Enemy
     {
-        public int proximity;
+        public float proximity;
     }
 }
