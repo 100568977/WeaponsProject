@@ -36,14 +36,26 @@ namespace WeaponsProject
             ranged1.CloseRange = 200;
             ranged1.CriticalDamage = ranged1.BaseDamage * 2;
 
-            /*melee1.attack(grunt.proximity);
+            Magic magic1 = new Magic();
+            magic1.BaseDamage = 20;
+            magic1.BaseRange = 200;
+
+            /*
+            for (int 1 = 0; i < 10; i ++
+            {
+            melee1.attack(grunt.proximity);
             melee1.attack(mole.proximity);
-            melee1.attack(dingo.proximity); */
+            melee1.attack(dingo.proximity);
+            }
 
             for (int i = 0; i < 30; i++)
             {
                 ranged1.attack(archer.proximity);
-            }
+            } 
+            */
+
+            magic1.attack(dingo.proximity);
+            magic1.attack(archer.proximity);
             Console.ReadKey();
         }
     }
