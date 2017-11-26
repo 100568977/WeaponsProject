@@ -40,22 +40,22 @@ namespace WeaponsProject
             magic1.BaseDamage = 20;
             magic1.BaseRange = 200;
 
-            /*
-            for (int 1 = 0; i < 10; i ++
+          
+            for (int i = 0; i < 10; i ++)
             {
-            melee1.attack(grunt.proximity);
-            melee1.attack(mole.proximity);
-            melee1.attack(dingo.proximity);
+            melee1.DoesDamage(grunt.proximity);
+            melee1.DoesDamage(mole.proximity);
+            melee1.DoesDamage(dingo.proximity);
             }
 
             for (int i = 0; i < 30; i++)
             {
-                ranged1.attack(archer.proximity);
+                ranged1.DoesDamage(archer.proximity);
             } 
-            */
+            
 
-            magic1.attack(dingo.proximity);
-            magic1.attack(archer.proximity);
+            magic1.DoesDamage(dingo.proximity);
+            magic1.DoesDamage(archer.proximity);
             Console.ReadKey();
         }
     }

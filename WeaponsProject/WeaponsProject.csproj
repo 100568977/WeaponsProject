@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CriticalDamage.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="IWeaponAttak.cs" />
     <Compile Include="Magic.cs" />
     <Compile Include="Melee.cs" />
     <Compile Include="Program.cs" />

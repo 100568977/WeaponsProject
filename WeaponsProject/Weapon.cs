@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WeaponsProject
 {
-    public abstract class Weapon
+    public class Weapon
     {
         public float BaseDamage;
         public float BaseRange;
@@ -16,7 +16,5 @@ namespace WeaponsProject
         {
             Console.WriteLine("You did 1 damage!");
         }
-
-        public abstract void attack(float proximity);
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace WeaponsProject
 {
-    public class Melee : Weapon
+    public class Melee : Weapon, IDoesDamage
     {
-        public override void attack(float proximity)
+        public void DoesDamage(float proximity)
         {
             if (BaseRange >= proximity)
             {

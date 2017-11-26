@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace WeaponsProject
 {
-    public class Ranged : Weapon
+    public class Ranged : Weapon, IDoesDamage
     {
         public int CloseRange;
-        public override void attack(float proximity)
+        public void DoesDamage(float proximity)
         {
             int randNumber = Program.rand.Next(100);
             decimal randNumber2 = (Program.rand.Next(50) + 50);
